@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body { font-family: "Inter", sans-serif; }
+
+      @keyframes drift {
+        0%, 100% { transform: translate(0, 0) scale(1); }
+        33%       { transform: translate(28px, -22px) scale(1.06); }
+        66%       { transform: translate(-18px, 18px) scale(0.94); }
+      }
+      .blob-1 { animation: drift 14s ease-in-out infinite; }
+      .blob-2 { animation: drift 11s ease-in-out infinite; animation-delay: -4s; }
+      .blob-3 { animation: drift 17s ease-in-out infinite; animation-delay: -9s; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-[#07071a] text-white overflow-x-hidden">
+
+    <!-- Animated background -->
+
+  </body>
+</html>
